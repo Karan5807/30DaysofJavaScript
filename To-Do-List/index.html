@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <link rel="Stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>To Do List</title>
+</head>
+<body>
+    <!--Creating Basic Input Section -->
+    <div class="container">
+        <div class="newTask">
+            <input type="text" id="Textfield" placeholder="Add your Task">
+            <button id="AddBtn">Add</button>
+        </div>
+    <!----Creation of List of Items ---->    
+        <ul id="parentList">
+            <li class="myList-items"> 
+                <p class="items">Add Items</p> 
+                <button class="Btn" id="EdtBtn" onclick="Edit(this)">Edit</button> 
+                <button class="Btn" id="DelBtn" onclick="Remove(this)">Remove</button> 
+            </li>
+        </ul>
+    </div>
+    <footer id="Footer">Design & Developed By: Karan Singh</footer>
+    <script src="Script.js"></script>
+</body>
+</html>

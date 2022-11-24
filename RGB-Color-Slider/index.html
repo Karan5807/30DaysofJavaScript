@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <link rel="StyleSheet" href="Styles.css">
+    <title>RGB Color Slider</title>
+</head>
+<body>
+    <div class="container">
+        <!--------- Including Wrapper Class  of RGB ---->
+        <div class="wrapper">
+            R<input type="range" min="0" max="255" value="0" id="Red" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            G<input type="range" min="0" max="255" value="0" id="Green" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            B<input type="range" min="0" max="255" value="0" id="Blue" oninput="colors()">
+        </div>
+        <!------ End of the Wrapper Class ----->
+        <!-------Starting of the Output Class ----->
+        <span id="Output">RGB(0,0,0)</span>
+        <!-------End of the Output Class ----->
+    </div>
+    <footer id="Footer">Design & Developed By: Karan Singh</footer>
+    <script src="Scripts.js"></script>
+</body>
+</html>

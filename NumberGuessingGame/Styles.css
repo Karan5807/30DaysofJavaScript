@@ -56,14 +56,3 @@ p{
     font-family: monospace;
     font-weight: 800;
 }
-#footer{
-    font-size: larger;
-    font-weight: 800;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: transparent;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    border-radius: 25px;
-    padding: 10px;
-    margin-top: 500px;
-}

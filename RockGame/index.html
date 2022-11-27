@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <link rel="Stylesheet" href="Styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div id="container">
+        <div class="scores">
+            <p>Computer:<span id="compScore">0</span></p>
+            <p>You: <span id="userScore">0</span></p>
+        </div>
+        <div class="weapons">
+            <button class="Btn" onclick="checker('Rock')">Rock</button>
+            <button class="Btn" onclick="checker('Paper')">Paper</button>
+            <button class="Btn" onclick="checker('Scissor')">Scissors</button>
+        </div>
+        <div class="details">
+            <p id="userChoice"></p>
+            <p id="compChoice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="Scripts.js"></script>
+</body>
+</html>

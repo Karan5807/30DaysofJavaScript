@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <link rel="Stylesheet" href="Styles.css">
+    <title>Simple Intrest</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-wrapper">
+
+            <div class="wrapper">
+                <label for="Principal">Principal :</label>
+                <input type="text" id="Principal" value="1000">
+            </div>
+
+            <div class="wrapper">
+                <label for="Rate">Rate :</label>
+                <input type="text" id="Rate" value="5">
+            </div>
+        </div>
+
+        <label for="time">Time :</label>
+        <div class="time-wrapper">
+            <input type="text" id="Time" value="1">
+            <select name="Duration" id="Duration">
+                <option value="Year">Year</option>
+                <option value="Month">Month</option>
+            </select>
+        </div>
+
+        <button id="calculate">Calculate</button>
+
+        <div class="Result"></div>
+
+    </div>
+    <script src="Scripts.js"></script>
+</body>
+</html>

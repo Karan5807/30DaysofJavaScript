@@ -1,15 +1,7 @@
-function checker(input){
-    let [compScore,userScore] = [0,0];
+let [compScore,userScore] = [0,0];
+var result = document.getElementById("result");
 
-    var choice = ["Rock","Paper","Scissor"];
-    var num = Math.floor(Math.random()*3);
-    
-    document.getElementById("compChoice").innerHTML = ` Computer Choose : <span> ${choice[num].toUpperCase()} </span> `;
-
-    document.getElementById("userChoice").innerHTML = `You Choose : <span> ${input.toUpperCase()} </span> `;
-    let userCh=input;
-    let compCh = (choice[num]);
-    let choice_object = {
+let choice_object = {
         'Rock':{
             'Rock' : 'Draw',
             'Scissor' : 'Win',
@@ -25,24 +17,34 @@ function checker(input){
             'Scissor' : 'Lose',
             'Paper' : 'Draw'
         }
-    }
+    } 
 
-    let result = document.getElementById("result");
+
+function checker(input){
+    var choice = ["Rock","Paper","Scissor"];
+    var num = Math.floor(Math.random()*3);
+    
+    document.getElementById("compChoice").innerHTML = ` Computer Choose : <span> ${choice[num].toUpperCase()} </span> `;
+
+    document.getElementById("userChoice").innerHTML = `You Choose : <span> ${input.toUpperCase()} </span> `;
+
+    var compCh = (choice[num]);
+
     switch(choice_object[input][compCh]){
         case 'Win':
             result.innerHTML = "You Win";
             userScore++;
             break;
-        
+
         case 'Lose':
             result.innerHTML = "You Lose";
             compScore++;
-            break;
-            
+            break;   
         case 'Draw':
-            result,innerHTML = "Match Draw";
-            break;    
+            result.innerHTML = "Match Draw";
+            break;     
     }
+       
     document.getElementById("compScore").innerHTML = compScore;
     
     document.getElementById("userScore").innerHTML = userScore;

@@ -69,13 +69,16 @@ button{
     padding: 15px 40px;
     font-size: 20px;
     border-radius: 5px;
+    font-weight: bolder;
 }
-#result{
-    background-color: #01e26e;
+#Result{
+    background-color: #01e26ea3;
     margin-top: 15px;
-    color: #585858;
+    color: #000000;
     text-align: center;
     font-size: 15px;
     padding: 15px;
     border-radius: 5px;
+    font-size: larger;
+    font-weight: 600;
 }

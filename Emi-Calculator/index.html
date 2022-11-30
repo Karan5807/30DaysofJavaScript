@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="Stylesheet" href="Styles.css">
+    <title>EMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <label for="Loan Amount">Loan Amount :</label>
+            <input type="text" id="TotalAmt" value="5000000">
+        </div>
+
+        <div class="wrapper">
+            <label for="Rate">Rate :</label>
+            <input type="text" id="Rate" value="8">
+        </div>
+
+        <div class="wrapper">
+            <label for="Time">Month to Pay :</label>
+            <input type="text" id="Month" value="240">
+        </div>
+
+        <div class="Button">
+            <button id="Btn">Check Emi</button>
+        </div>
+        <div class="Output">
+            <div id="Result"></div>
+        </div>
+    </div>
+    
+    <script src="Scripts.js"></script>
+</body>
+</html>

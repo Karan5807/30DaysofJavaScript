@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+}
+.container{
+    width: 40%;
+    min-width: 421px;
+    padding: 30px ;
+    position: absolute;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 15px 15px rgba(0,0,0,0.4);
+}
+.wrapper{
+    display: flex;
+    justify-content:space-between;
+    gap: 5px;
+    padding: 7px;
+    font-size: larger;
+    font-weight: 700;
+    align-items: center;
+}
+input{
+    border: none;
+    font-size: larger;
+    font-weight: 500;
+    text-align: right;
+}
+button{
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 40%;
+    width: 30%;
+    color: white;
+    background-color: #3F2B96;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: larger;
+    font-style: initial;
+}
+.Output{
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    background-color: deepskyblue;
+    color: white;
+}
+#Result{
+    text-align: center;
+    background-color: #3F2B96;
+    color: #ffffFF;
+    font-size: larger;
+    font-weight: 600;
+}

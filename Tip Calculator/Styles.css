@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #a8faef;
+    background-image: linear-gradient(19deg, #a8faef 0%, #f3d6d6 100%);
+}
+.container{
+    width: 50%;
+    min-width: fit-content;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    border-radius: 10px;
+    box-shadow: 5px 15px 25px rgba(0,0,0,0.6);
+}

@@ -8,7 +8,10 @@
 body{
     height: 100vh;
     background-color: #a8faef;
-    background-image: linear-gradient(19deg, #a8faef 0%, #f3d6d6 100%);
+    background-image: linear-gradient(19deg, #a8faef 0%, #f3d6d6 100%) fixed;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
 }
 .container{
     width: 50%;
@@ -18,8 +21,45 @@ body{
     top: 50%;
     left: 50%;
     padding: 40px;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-color: aquamarine;
     border-radius: 10px;
     box-shadow: 5px 15px 25px rgba(0,0,0,0.6);
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+input{
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    margin: 5px;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+input[type="range"]{
+    width: 50%;
+}
+button{
+    width: 25%;
+    font-size: larger;
+    font-weight: 700;
+    background-color: transparent;
+    color: blue;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+#Result{
+    background-color: #a8faef;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    background-color: cadetblue;
 }

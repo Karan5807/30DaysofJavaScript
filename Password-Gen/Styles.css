@@ -17,14 +17,15 @@ body{
     position: absolute;
     border: 5px solid white;
     border-radius: 8px;
-    background-color: darkcyan;
+    background-color: transparent;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+    place-items: center;
 }
 #Output{
     background-color: #2ebf75;
     border: none;
     border-bottom: 3px solid #e3e3e3;
-    width: 55%;
+    width: 85%;
     height: 35px;
     padding: 20px;
     border-radius: 10px;
@@ -32,11 +33,13 @@ body{
     font-size: larger;
     font-weight: 700;
     letter-spacing: 2px;
-    color: whitesmoke;
+    color: black;
     margin-right: 5px;
+    display: block;
+    margin-bottom: 15px;
 }
 button{
-    width: 20%;
+    width: 25%;
     height: 40%;
     border-radius: 10%;
     cursor: pointer;
@@ -44,6 +47,7 @@ button{
     font-size: larger;
     font-family: monospace;
     font-weight: 600;
+    border: 5px solid whitesmoke; 
 }
 input[type="range"]{
     width: 65%;
@@ -52,10 +56,11 @@ input[type="range"]{
 }
 h3{
     font-family: monospace;
+    font-size: larger;
+    font-weight: 600;
     width: 50%;
     display: inline-block;
     color: whitesmoke;
     text-align: right;
-    padding: 10px;
-
+    padding: 10px;  
 }

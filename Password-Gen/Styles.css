@@ -1,0 +1,61 @@
+*,*::before,*::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #61d954,#2ebf75);
+}
+.container{
+    width: 50%;
+    min-width: 421px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 8px;
+    background-color: darkcyan;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+}
+#Output{
+    background-color: #2ebf75;
+    border: none;
+    border-bottom: 3px solid #e3e3e3;
+    width: 55%;
+    height: 35px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    margin-right: 5px;
+}
+button{
+    width: 20%;
+    height: 40%;
+    border-radius: 10%;
+    cursor: pointer;
+    align-items: center;
+    font-size: larger;
+    font-family: monospace;
+    font-weight: 600;
+}
+input[type="range"]{
+    width: 65%;
+    height: 30px;
+    padding: 10px;
+}
+h3{
+    font-family: monospace;
+    width: 50%;
+    display: inline-block;
+    color: whitesmoke;
+    text-align: right;
+    padding: 10px;
+
+}

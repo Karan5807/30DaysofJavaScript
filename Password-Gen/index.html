@@ -12,14 +12,12 @@
 <body>
     <div class="container">
         <input type="text" id="Output">
-        <button>Copy</button>
-        <button >Reset</button>
-        <div>
-            <input type="range" id="length" min="8" max="25" value="8" oninput="gen()">
-            <h3 id="length-val">8</h3>
-        </div>
-        
-    </div>
-    
+        <button id="Generate">Generate</button>
+        <button id="CopyBtn" onclick="Copy()">Copy</button>
+        <button id="ResetBtn" onclick="genPass()">Reset</button>
+        <input type="range" id="Val" min="8" max="28" value="8" oninput="genPass()">
+        <h3 id="Print-Val">8</h3>
+    </div> 
+    <script src="Scripts.js"></script>
 </body>
 </html>

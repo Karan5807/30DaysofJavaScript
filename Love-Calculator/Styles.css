@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #ff69b4 0%, #f9629f 100%);
+}
+.container{
+    width: 50%;
+    min-width: 421px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border: 5px soild whitesmoke;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff00bf;
+    margin-bottom: 20px;
+}
+.Name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+input{
+    border: 2px solid #ff00bf;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 700;
+    font-family: monospace;
+    width: 40%;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+button{
+    width: max-content;
+    display: block;
+    margin: auto;
+    border: 5px solid whitesmoke;
+    border-radius: 8px;
+    background-color: #ff00bf;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    font-family: monospace;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+.Result{
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    font-family: monospace;
+}

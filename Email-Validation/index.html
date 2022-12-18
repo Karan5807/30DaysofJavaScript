@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Email Validation</title>
-    <!--FontAwesome Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <meta name="keywords" content="Html,JavaScript,Css,Email-validation">
+    <!-------  Title Icon ----->
+    <link rel="icon" type="image/icon type" href="/Email Validation/Assests/tools-and-utensils-programmer-svgrepo-com.svg">
+    <!-----------Google Fonts ---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-----------Font Awsome --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!------------Stylesheet Link -------->
+    <link rel="Stylesheet" href="Styles.css">
+    <title>Email-Validation</title>
 </head>
 <body>
     <div class="container">
-        <label for="email-id">Email Id</label><br>
-        <input type="email" id="email-id" oninput="checker()">
-        <div id="icon">
-           
+        <label for="Email">Email-Id</label>
+    <div class="Task">
+        <input type="email" id="Email-Id" oninput="Checker()">
+        <div id="Icon">
+            
         </div>
-        <p id="error-msg">Please Enter A Valid Email Id</p>
     </div>
-<!--Script-->
-<script src="script.js"></script>
+    <p id="Msg"></p>
+    <script src="Scripts.js"></script>
 </body>
 </html>

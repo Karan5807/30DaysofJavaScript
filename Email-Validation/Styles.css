@@ -7,15 +7,12 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(
-        135deg,
-        #61d954,
-        #2ebf75
-    );
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    font-family: 'Roboto Slab', serif;
 }
 .container{
     width: 400px;
-    background-color: #ffffff;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     padding: 50px 30px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -28,33 +25,37 @@ body{
 label,
 input,
 #error-msg{
-    font-family: 'Poppins',sans-serif;
+    font-family:inherit;
 }
 label{
-    display: inline-block;
+    display: block;
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: larger;
 }
-input[type="email"]{
-    display: inline-block;
-    border: 2px solid #d1d3d4;
-    width: 88%;
-    height: 50px;
-    border-radius: 5px;
-    outline: none;
-    letter-spacing: 0.5px;
-    font-weight: 400;
+.Task{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
-#icon{
+input{
+    width: 85%;
+    border: none;
+    border-bottom: 4px solid #4e9c81;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+#Icon{
     float: right;
     height: 50px;
     position: relative;
     font-size: 25px;
     padding-top: 10px;
 }
-#error-msg{
-    display: none;
+#Msg{
     color: #ff2851;
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
 }

@@ -1,0 +1,78 @@
+*,*::before,*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+.container{
+    width: 45%;
+    min-width: 421px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    font-size: "Roboto Slab";
+}   
+input{
+    width: 70%;
+    padding: 5px;
+    font-size: large;
+    font-family: inherit;
+    font-weight: 400;
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #4b6cb7;
+    margin-top: 15px;
+} 
+button{
+    float: right;
+    padding: 5px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: inherit;
+    width: 20%;
+    border-radius: 8px;
+    background-color: #7c92c7;
+    border: none;
+    color: #fefefe;
+}
+button:hover{
+    font-size: x-large;
+    font-weight: 600;
+    background-color: powderblue;
+    color: #4b6cb7;
+}
+.result{
+    position: relative;
+}
+.result h3{
+    font-size: x-large;
+    color: #7c92c7;
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.detail{
+    display: flex;
+    gap: 10px;
+    color: #b3b6b4;
+    margin: 5px;
+    font-size: 15px;
+}
+.word-meaning{
+    color: #4b6cb7;
+}
+.word-example{
+    margin-top: 20px;
+    color: #4b6cb7;
+}

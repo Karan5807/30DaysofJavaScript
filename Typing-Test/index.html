@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <meta name="Detail" content="A Typing Test with the help of Html Css JavaScript">
+    <link rel="icon" href="/Typing-Test/Title=IMG.svg" type="icon">
+    <link rel="Stylesheet" href="Styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Typing App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Record">
+            <p>Time :<span id="Time">0</span></p>
+            <p>Mistake :<span id="Mistake">0</span></p>
+        </div> 
+
+        <div id="Lines" onmousedown="return false" onselectstart="return false">
+            
+        </div>
+
+        <textarea id="Input-Lines" rows="4" placeholder="Start Here....."></textarea>
+
+      
+            <button id="Start">Start</button>
+            <button id="Stop">Stop</button>
+
+        <div class="Result">
+            <h2>Result</h2>
+            <div class="Wrapper">
+                <p>Accuracy : <span id="Accu"></span></p>
+                <p>WPM : <span id="wpm"></span></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="Scripts.js"></script>
+</body>
+</html>

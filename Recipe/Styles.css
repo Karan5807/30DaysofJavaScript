@@ -1,0 +1,116 @@
+*,*::before,*::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    font-family: "Roboto-Slab";
+}
+.container{
+    width: 45%;
+    min-width: 421px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 12px 10px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: none;
+}
+.Wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    padding: 8px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 3px solid cadetblue;
+    font-family: inherit;
+    font-size: larger;
+    font-weight: 500;
+}
+button{
+    padding: 8px;
+    font-family: inherit;
+    font-size: larger;
+    font-weight: 500;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 8px;
+    color: azure;
+}
+img{
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+.Detail{
+    background-color: #f4c531;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+.Detail h2{
+    font-size: larger;
+    font-weight: 400;
+}
+.Detail h4{
+    font-size: large;
+    font-weight: 400;
+}
+#Recipe pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 5px;
+}
+#Show{
+    font-size: large;
+    position: relative;
+    left: 65%;
+    padding: 8px;
+    background-color: #f4c531;
+    border: none;
+    top: 5px;
+    font-weight: 600;
+}
+#Recipe{
+    position: absolute;
+    background-color: azure;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 2px;
+    display: none;
+}
+#Hide{
+    font-size: large;
+    position: relative;
+    background-color: #f4c531;
+    border: none;
+    top:2px;
+    left: 90%;
+    border-radius: 4px;
+}
+ul{
+    font-size: large;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    padding: 10px 12px;
+}
+@media screen and(max-width: 500px) {
+    .container{
+        font-size: medium;
+    }
+}

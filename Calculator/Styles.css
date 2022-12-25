@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*,::before,::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Slab";
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    bottom: -100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.container span{
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    animation: move 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes move {
+    100%{
+       transform: translateY(-90vh); 
+    }
+}
+.container span.one{
+    animation-delay: 2s;
+    transform: scale(1.6);
+    border-radius: 12px;
+}
+.container span.Two{
+    animation-delay: 3.5s;
+    transform: scale(6.5);
+    border-radius: 12px;
+}
+.container span.Three{
+    animation-delay: 1.2s;
+    transform: scale(1.4);
+    border-radius: 12px;
+}
+.container span.Four{
+    animation-delay: 8s;
+    transform: scale(3.2);
+    border-radius: 12px;
+}
+.container span.Five{
+    animation-delay: 2.3s;
+    transform: scale(4.8);
+    border-radius: 12px;
+}
+.container span.Six{
+    animation-delay: 4.8s;
+    transform: scale(2.7);
+    border-radius: 12px;
+}
+.container span.Seven{
+    animation-delay: 7s;
+    transform: scale(4.1);
+    border-radius: 12px;
+}
+.container span::before{
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 12px;
+    transform: skew(45deg);
+    animation: mirror 3s linear infinite;
+}
+@keyframes mirror {
+    100%{
+        transform: translateX(-450px);
+    }
+}
+.container span.One::before{
+    animation-delay: 3.5;
+}
+.container span.Two::before{
+    animation-delay: 7.5;
+}
+.container span.Three::before{
+    animation-delay: 3.5;
+}
+.container span.Four::before{
+    animation-delay: 6.5;
+}
+.container span.Five::before{
+    animation-delay: 1.5;
+}
+.container span.Six::before{
+    animation-delay: 2.5;
+}
+.container span.Seven::before{
+    animation-delay: 5.5;
+}
+
+.calculator{
+    width: 45%;
+    min-width: 421px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.calculator input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin: 0 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-align: right;
+    font-size: larger;
+    padding-right: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.calculator input[type="button"]{
+    height: 55px;
+    color: #fff;
+    width: calc(100%/4 - 5px);
+    border-radius: 12px;
+    margin-top: 15px;
+    background: transparent;
+    font-size: x-large;
+    justify-content: space-around;
+    outline: none;
+    cursor: pointer;
+}
+.calculator input[type="button"]:hover{
+    background-color: #51610c;
+}

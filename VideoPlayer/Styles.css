@@ -1,0 +1,42 @@
+*, *::before,*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+.container{
+    width: fit-content;
+    min-width: fit-content;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: lightskyblue;
+    border: 2px solid white;
+    border: none;
+    border-radius: 12px;
+}
+video{
+    padding: 2%;
+    width: max-content;
+}
+button{
+    background-color: green;
+    display: block;
+    margin: 2%;
+    border: none;
+}
+.control{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: transparent;
+}
+span{
+    justify-content: space-between;
+}

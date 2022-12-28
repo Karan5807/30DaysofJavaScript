@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Karan Singh">
+    <meta name="Description" content="A Beat Box working playing music on key">
+    <meta name="keyword" content="Html Css JavaScript Beat-Box Music">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Title=IMG.svg" type="icon">
+    <link rel="Stylesheet" href="Styles.css">
+    <title>Beat-Box</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <video id="v1" src="/Drum-Box/VID-20201116-WA0002.mp4" height="250px" width="850px"></video>
+        </div>
+        <div class="control">
+            <button id="Btn" onclick="vplay()">Play</button>
+            <input type="range" id="Volume" min="0" max="100" value="30" oninput="vol()">
+            
+        </div>
+    </div>
+    
+    <script src="Scripts.js"></script>
+</body>
+</html>

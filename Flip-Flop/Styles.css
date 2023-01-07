@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*,*::before,*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right,#575ce5 50% , #f9fbec 50%)fixed;
+    font-family: "Roboto Slab";
+}
+.container{
+    width: 50%;
+    min-width: 421px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0px 10px 10px 15px rgba(0, 0, 0, 0.3) ;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-perspective: 30%;
+    perspective: 30%;
+    font-family: "Roboto Slab";
+}
+.state{
+    text-align: right;
+    font-size: larger;
+    font-weight: 600;
+    line-height: 25px;
+}
+.Food{
+    height: 40%;
+    width: 40%;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+.Food img{
+    width: 70%;
+}
+.Burger, .DoughNut{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.Burger{
+    transform: rotateX(180deg);
+}
+@keyframes spin-Burger{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-Doughnut{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 120px;
+    padding: 10px;
+    border: 2.5px solid #424ae0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    letter-spacing: 1.5px;
+}
+#flip-btn{
+    background-color: #424ae0;
+    color: #ffffff;
+}
+#flip-btn:disabled{
+    background-color: #e1e0ee;
+    border-color: #e1e0ee;
+    color: #101020;
+}
+#reset-btn{
+    background-color: #ffffff;
+    color: #424ae0;
+}
+.footer{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer span{
+    color: red;
+}
+
+
+
+
